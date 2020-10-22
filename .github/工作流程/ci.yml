@@ -21,7 +21,7 @@ jobs:
     - run: mkdir sashimi-frontend
     - run: yarn
     - run: npm run pkg:online
-      env:
+#      env:
 #        CI: true
 #    - run: cp build-online.tar.gz sashimi-frontend/
 #    - run: npm run pkg:online-test
