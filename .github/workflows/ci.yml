@@ -22,16 +22,16 @@ jobs:
     - run: yarn
     - run: npm run pkg:online
       env:
-        CI: true
-    - run: cp build-online.tar.gz sashimi-frontend/
-    - run: npm run pkg:online-test
-      env:
-        CI: true
-    - run: cp build-online-test.tar.gz sashimi-frontend/
-    - run: npm run pkg:kovan
-      env:
-        CI: true
-    - run: cp build-kovan.tar.gz sashimi-frontend/
+#        CI: true
+#    - run: cp build-online.tar.gz sashimi-frontend/
+#    - run: npm run pkg:online-test
+#      env:
+#        CI: true
+#    - run: cp build-online-test.tar.gz sashimi-frontend/
+#    - run: npm run pkg:kovan
+#      env:
+#        CI: true
+#    - run: cp build-kovan.tar.gz sashimi-frontend/
     - name: Release
       uses: xresloader/upload-to-github-release@v1
       env:
